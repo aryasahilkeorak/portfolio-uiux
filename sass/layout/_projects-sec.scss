@@ -1,0 +1,52 @@
+.recent-projects {
+    .recent-thumbnail {
+        img {
+            min-width: 100%;
+            max-height: 370px;
+            min-height: 370px;
+            transition: ease all .3s;
+
+            @include media-breakpoint-down(md) {
+                max-height: 400px;
+                min-height: 400px;
+            }
+        }
+    }
+
+    .active-project {
+        transition: ease all .3s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .line-divide {
+            width: 16.875rem;
+            height: 0.0625rem;
+            background-color: $Sonic-Silver;
+            margin-top: 0.75rem;
+        }
+    }
+
+    .hover-effect {
+        visibility: hidden;
+        opacity: 0;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        .hover-effect {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .recent-thumbnail {
+            img {
+                filter: grayscale(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.contact-form-sec {
+    @include padding-y(100px, 85px);
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(60px, 65px);
+    }
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(50px, 35px);
+    }
+
+    .input-box {
+        border: 1px solid $Quartz;
+        padding: 12px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+
+        .form-control {
+            min-height: 100%;
+            color: $Dark-Gray;
+            font-size: $font-16;
+            line-height: 1.6;
+            padding: 5px 20px;
+            margin-right: 10px;
+            border: 0;
+            outline: none;
+            box-shadow: none;
+
+            &::placeholder {
+                color: $Dark-Gray;
+            }
+
+            &:focus {
+                border: 0;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}

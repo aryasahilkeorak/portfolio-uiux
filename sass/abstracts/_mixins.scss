@@ -1,0 +1,9 @@
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin padding-y($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}

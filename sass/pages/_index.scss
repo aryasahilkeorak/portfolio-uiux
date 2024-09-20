@@ -1,0 +1,297 @@
+.hero-banner {
+    p:nth-of-type(2) {
+        margin-bottom: 2.25rem;
+    }
+
+    h1 {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            @include size(1.25rem, 1.25rem);
+            background-color: $Lust;
+            bottom: 0;
+            right: -1.875rem;
+            opacity: 0.6;
+            border-radius: 30% 70% 100% 0% / 0% 0% 100% 100%;
+            transform: rotate(2.04deg);
+        }
+    }
+
+    .contact {
+        @include size(7.5rem, 7.5rem);
+        border: 1px solid $Black-Coral;
+        cursor: pointer;
+    }
+
+    .hero-img {
+        background-color: $Gunmetal;
+        border-radius: 1000px 1000px 0 0;
+    }
+}
+
+
+.about {
+    background-color: $Ghost-White;
+
+    @media screen and (min-width: 992px) {
+        padding: 4.375rem 7.5rem;
+    }
+
+    h2 {
+        position: relative;
+        display: inline-block;
+
+        @media screen and (min-width: 768px) {
+            &:after {
+                content: "";
+                position: absolute;
+                background-image: url(../images/icons/shape-1.svg);
+                background-size: cover;
+                @include size(2.75rem, 2.75rem);
+                top: 1.5625rem;
+                right: -1.375rem;
+            }
+        }
+    }
+
+    .about-text {
+        color: $Charleston-Green;
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+            top: 4.375rem;
+        }
+
+        @media screen and (min-width: 992px) {
+            top: 5.625rem;
+        }
+
+        @media screen and (min-width: 1400px) {
+            top: 9.375rem;
+            padding-left: 12rem;
+        }
+    }
+}
+
+// ----------
+
+.brand {
+    h2 {
+        margin-bottom: 50px;
+
+    }
+
+    .brand-heading {
+        line-height: 150%;
+        color: #252734;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding: 5.25rem 7.5rem;
+    }
+}
+
+// --------
+
+.contact {
+    @media screen and (min-width: 992px) {
+        padding: 4.375rem 7.5rem;
+    }
+
+    .contact-btn {
+        @include size(10.75rem, 10.75rem);
+        background-color: $Lust;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+}
+
+
+//   --------
+
+.happy-moment {
+    padding: $padding-section;
+    background-color: $Charleston-Green;
+
+    .happy-moment-text {
+        color: $Ghost-White;
+        font-size: $font-24;
+        margin-bottom: 72px;
+        margin-left: 16px;
+
+        .happy-moment-after {
+            position: relative;
+        }
+
+        .happy-moment-after::after {
+            content: "";
+            position: absolute;
+            background-image: url(../images/icons/shape-6.svg);
+            background-repeat: no-repeat;
+            @include size(2.6875rem, 2.5rem);
+            top: 7.1875px;
+            right: -47.375px;
+        }
+    }
+}
+
+// ------------
+
+.keynote {
+    background-color: $Charleston-Green;
+
+    h2 {
+        @media screen and (min-width: 768px) {
+            &:after {
+                background-image: url(../images/icons/shape-2.svg);
+            }
+        }
+    }
+
+    .keynote-text {
+        @media screen and (min-width: 1400px) {
+            padding-left: 9.5rem;
+        }
+    }
+}
+
+// -----------
+.working {
+    background-color: $Ghost-White;
+
+    @media screen and (min-width: 992px) {
+        padding: 4.375rem 7.5rem;
+    }
+
+    // background-color: $Charleston-Green;
+    .table-responsive {
+        background-color: $Ghost-White;
+
+        .table {
+            tr {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            }
+
+            td {
+                padding: 30px 15px;
+                background-color: $Ghost-White;
+
+            }
+        }
+    }
+
+
+    h2 {
+        margin-bottom: 47px;
+        color: $Charleston-Green;
+
+        span {
+            position: relative;
+
+            @media screen and (min-width: 576px) {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../images/icons/shape-4.png);
+                    background-repeat: no-repeat;
+                    @include size(2.6875rem, 2.5rem);
+                    top: 2.1875rem;
+                    right: -1.375rem;
+                }
+            }
+        }
+    }
+}
+
+
+// ----------
+
+.travel {
+    h2 {
+        margin-bottom: 38px;
+
+        &:after {
+            background-image: none;
+        }
+
+        span {
+            &:after {
+                content: "";
+                position: absolute;
+                background-image: url(../images/icons/shape-5.svg);
+                background-repeat: no-repeat;
+                @include size(2.75rem, 2.75rem);
+                bottom: -2.8125rem;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .travel-text {
+        position: static;
+    }
+
+    .travel-img-2 {
+        bottom: -50px;
+        right: -110px;
+    }
+}
+
+// --------------
+
+.review {
+    @media screen and (min-width: 992px) {
+        padding: 4.375rem 7.5rem;
+    }
+}
+
+// -------------
+
+.project {
+    background-color: $Ghost-White;
+
+    @media screen and (min-width: 992px) {
+        padding: 4.375rem 7.5rem;
+    }
+
+    h2 {
+        margin-bottom: 3.5625rem;
+
+        span {
+            position: relative;
+
+            @media screen and (min-width: 576px) {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../images/icons/shape-3.svg);
+                    background-size: cover;
+                    @include size(2.125rem, 2.5rem);
+                    top: 1.875rem;
+                    right: -2.625rem;
+                }
+            }
+        }
+    }
+
+    .see-more-link {
+        padding-bottom: 1.25rem;
+
+        @media screen and (min-width: 992px) {
+            padding-right: 1.5rem;
+        }
+    }
+
+    .see-more-link a {
+        color: $Majorelle-Blue;
+    }
+}
+
+
+
+// sahil ------
+

@@ -1,0 +1,60 @@
+.contact-page-form-sec {
+    @include padding-y(70px, 100px);
+
+    @include media-breakpoint-down(md) {
+        @include padding-y(50px, 50px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include padding-y(40px, 40px);
+    }
+
+    .contact-details {
+        margin-top: 36px;
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 36px;
+            font-size: $font-18;
+            color: $Quartz;
+            font-weight: 600;
+
+            i {
+                color: $Lust;
+                margin-right: 15px;
+            }
+
+            address {
+                margin: 0;
+            }
+        }
+    }
+
+    .contact-form-fields {
+        .form-control {
+            background-color: $Cultured;
+            border-radius: 4px;
+            border: 0;
+            outline: none;
+            box-shadow: none;
+            padding: 18px 20px;
+            color: $Dark-Gray;
+            font-size: $font-16;
+            line-height: 1.6;
+            margin-bottom: 24px;
+
+            &:focus {
+                border: 0;
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: $Dark-Gray;
+                font-size: $font-16;
+                line-height: 1.6;
+            }
+        }
+    }
+}

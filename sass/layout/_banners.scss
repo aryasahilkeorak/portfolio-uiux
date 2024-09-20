@@ -1,0 +1,23 @@
+.banner {
+  background-color: $Charleston-Green;
+}
+
+.hero-banner {
+  @include padding-y(100px , 0px);
+}
+
+.portfolio-banner {
+  @include padding-y(60px , 60px);
+}
+
+.contact-banner {
+  @include padding-y(70px , 70px);
+
+  @include media-breakpoint-down(md){
+    @include padding-y(50px , 50px);
+  }
+}
+
+.about-banner{
+  @include padding-y(50px , 0px);
+}

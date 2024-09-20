@@ -1,0 +1,50 @@
+// custom variables
+@import '../sass/abstracts/variables';
+
+// bootstrap files
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// aos animation
+// @import '../node_modules/aos/src/sass/aos.scss';
+
+// mixins & extend file
+@import '../sass/abstracts/mixins';
+@import '../sass/abstracts/extends';
+
+// base files
+@import '../sass/base/reset';
+@import '../sass/base/typography';
+
+// layouts header/footer and etc.
+@import '../sass/layout/header';
+@import '../sass/layout/footer';
+@import '../sass/layout/banners';
+@import '../sass/layout/contact-form';
+@import '../sass/layout/projects-sec';
+
+
+// components files
+@import '../sass/components/buttons';
+
+
+// all pages sass files
+@import '../sass/pages/index';
+@import '../sass/pages/about';
+@import '../sass/pages/portfolio';
+@import '../sass/pages/contact';
+
+
+
+// owl carousel files
+// @import '../vendors/owlcarousel/src/scss/owl.carousel.scss';
+// @import '../vendors/owlcarousel/src/scss/owl.theme.default.scss';
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.portfolio-items-sec {
+    @include padding-y(40px, 40px);
+
+    .portfolio-nav-buttons {
+        margin-bottom: 55px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 40px;
+        }
+
+        .nav-tabs {
+            border: 0;
+
+            .nav-item {
+                margin-right: 40px;
+
+                @include media-breakpoint-down(md) {
+                    margin-right: 20px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-right: 0px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+
+                .nav-link {
+                    border: 0;
+                    font-size: $font-18;
+                    font-weight: 500;
+                    color: $Charleston-Green;
+
+                    @include media-breakpoint-down(sm) {
+                        padding: 0.5rem .6rem;
+                    }
+
+                    &.active {
+                        color: $Lust;
+                    }
+                }
+            }
+        }
+    }
+}

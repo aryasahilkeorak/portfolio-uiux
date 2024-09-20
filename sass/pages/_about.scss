@@ -1,0 +1,327 @@
+.about-banner {
+    article {
+        p {
+            span {
+                font-weight: 600;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.expertise-section {
+    @include padding-y(60px, 60px);
+
+    @include media-breakpoint-down(md) {
+        @include padding-y(50px, 50px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include padding-y(40px, 40px);
+    }
+
+    .expertise-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include media-breakpoint-down(sm) {
+            align-items: start;
+        }
+
+        .expertise {
+            text-align: center;
+            width: calc(100% / 3);
+
+            &:nth-of-type(2) {
+                border: 0px solid $Quartz;
+                border-left-width: 1px;
+                border-right-width: 1px;
+            }
+
+            h6 {
+                font-size: $font-56;
+                color: $Charleston-Green;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: $font-16;
+                line-height: 2;
+                color: $Charleston-Green;
+                font-weight: 600;
+
+                @include media-breakpoint-down(sm) {
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+
+.certifications-sec {
+    @include padding-y(80px, 40px);
+    background-color: $Charleston-Green;
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(50px, 30px);
+    }
+
+    .table.table-dark {
+        tr {
+            vertical-align: middle;
+
+            @include media-breakpoint-down(md) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            td {
+                background-color: transparent;
+                padding: 30px 0px;
+                border-bottom-color: $Quartz;
+                color: $white;
+
+                a {
+                    img {
+                        transition: ease all .3s;
+
+                        &:hover {
+                            transform: scale(.9);
+                        }
+                    }
+                }
+
+                &:first-of-type {
+                    font-size: $font-16;
+                    line-height: 1.5;
+                    letter-spacing: 4.2px;
+                    text-transform: uppercase;
+
+                    @include media-breakpoint-down(md) {
+                        width: 90%;
+                        order: 1;
+                        border: 0;
+                        padding-bottom: 0;
+                    }
+
+                }
+
+                &:nth-of-type(2) {
+                    font-size: $font-28;
+                    font-weight: 500;
+                    line-height: 1;
+
+                    @include media-breakpoint-down(xl) {
+                        font-size: calc($font-28 - .3rem);
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                        order: 3;
+                        padding-top: 15px;
+                        padding-bottom: 20px;
+                    }
+                }
+
+                &:last-of-type {
+                    text-align: end;
+
+                    @include media-breakpoint-down(md) {
+                        width: 10%;
+                        order: 2;
+                        border: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                td {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.services-sec {
+    @include padding-y(70px, 70px);
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(60px, 60px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include padding-y(50px, 40px);
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 40px;
+
+        @include media-breakpoint-down(md) {
+            border-spacing: 0 0;
+        }
+
+        tr {
+            vertical-align: middle;
+            border-radius: 4px;
+            border: 0;
+
+            @include media-breakpoint-down(md) {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+            }
+
+            &:first-of-type {
+                background-color: $Charleston-Green;
+
+                td {
+                    background-color: $Charleston-Green;
+                    color: $white;
+                }
+            }
+
+            &:nth-of-type(2) {
+                td {
+                    background-color: $Alice-Blue;
+                    color: $black;
+                }
+            }
+
+            &:last-of-type {
+                td {
+                    background-color: $Snow;
+                    color: $black;
+                }
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 0px;
+                }
+            }
+
+            td {
+                padding: 35px 0px;
+                border: 0;
+                font-size: $font-18;
+                line-height: 1.24;
+                font-weight: 500;
+
+                &:first-of-type {
+                    width: 30%;
+                    border-radius: 10px 0px 0px 10px;
+                    padding-left: 30px;
+
+                    img {
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        width: 50%;
+                        order: 1;
+                        padding: 20px 20px 20px 30px;
+                        border-radius: 10px 0px 0px 0px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    width: 40%;
+
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                        order: 3;
+                        padding: 0px 30px 30px 30px;
+                        border-radius: 0px 0px 10px 10px;
+                    }
+
+                }
+
+                &:last-of-type {
+                    text-align: end;
+                    width: 30%;
+                    border-radius: 0px 10px 10px 0px;
+                    padding-right: 30px;
+
+                    @include media-breakpoint-down(md) {
+                        width: 50%;
+                        order: 2;
+                        padding: 20px 30px 20px 30px;
+                        border-radius: 0px 10px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.expertise-tech-sec {
+    @include padding-y(80px, 50px);
+    background-color: $Charleston-Green;
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(50px, 50px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include padding-y(30px, 50px);
+    }
+
+    .exp-tech-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tech-box {
+            width: calc(100% / 5);
+            border: 1px solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            margin: -1px 0 0 -1px;
+
+            @include media-breakpoint-down(xl) {
+                width: calc(100% / 4);
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: calc(100% / 3);
+            }
+
+            @include media-breakpoint-down(md) {
+                width: calc(100% / 2);
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 30px 20px;
+            }
+        }
+    }
+}
+
+.recent-projects-sec {
+    @include padding-y(80px, 70px);
+
+    @include media-breakpoint-down(lg) {
+        @include padding-y(50px, 50px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        @include padding-y(40px, 30px);
+    }
+
+    .see-more-link {
+        color: $Majorelle-Blue;
+        font-weight: 500;
+    }
+}
